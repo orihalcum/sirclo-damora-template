@@ -8,23 +8,34 @@
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-    .navbar-brand {
-        position: absolute;
-        left: 50%;
-        top: 0px;
-        img {
-            position: relative;
-            left: -50%;
-            height: 20px;
+
+    .navbar {
+
+        font-size: 10pt;
+        .navbar-brand {
+            position: absolute;
+            left: 49%;
+            top: 0px;
+            img {
+                position: relative;
+                left: -49%;
+                height: 15px;
+                width: auto;
+            }
         }
-    }
-    .icon {
-        height: 15px;
-        width: auto;
-        margin-top: 8px;
-    }
-    .icon-menu {
-        margin-left: 30px;
+        .icon {
+            height: 15px;
+            width: auto;
+            margin-top: 8px;
+        }
+        .icon-menu {
+            margin-left: 30px;
+        }
+        .navbar-nav {
+            li { display: inline; }
+            margin-right: 15px;
+        }
+
     }
 }
 
