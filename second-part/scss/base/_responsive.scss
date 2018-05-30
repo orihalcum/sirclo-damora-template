@@ -1,0 +1,103 @@
+
+    .visible-xs {
+
+        p { font-size : 15px; }
+        h1.media-heading { font-size : $xs-h1 }
+        h2 { font-size : $xs-h2 }
+        h3 { font-size : $xs-h3 }
+        h4 { font-size : $xs-h4 }
+
+        div.page-header { margin-bottom : 10px }
+        
+        
+        .news-feed, .news-related {
+            
+            .media {
+
+                margin : 0px;
+                padding-bottom : 10px;
+                padding-top : 10px;
+                border-bottom: 1px solid $color-light;
+
+                .media-left {
+
+                    .media-object.mobile {
+                        
+                        height:90px; 
+                        width:90px; 
+                        background-position:center middle; 
+                        background-attachment: clip; 
+                        background-size: auto 90px; 
+                        background-repeat:none;
+                    
+                    }
+
+                }
+
+                .media-body {
+
+                    h5.media-category-name { margin-top : 10px }
+                    p.media-heading {
+                        a {
+                            font-size: 16px;
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+        .bs-example-navbar-collapse-0 .nav { margin-bottom : 0 }
+
+        .nav {
+            margin-top : 0;
+        }
+
+    }
+    
+    .visible-xs.container-wrapper { margin-top : 70px; }
+
+        
+    .visible-md {
+        
+        .media-object { 
+            
+            height : 100px; 
+            width : 150px;
+            
+         } 
+
+    }
+
+    @media only screen and (min-width: 1240px) {
+
+    }
+
+    @media only screen and (max-width: 720px) {
+
+        .container-wrapper-iframe {
+            
+            margin-top : 50px !important;
+
+        }
+
+    }
+
+    @media only screen and (min-width: 320px) {
+        
+        .navbar {
+
+            .navbar-header{
+
+                .navrab-brand {
+    
+                    img { height : 15px !important }
+    
+                }
+
+            }
+
+        }
+
+    }

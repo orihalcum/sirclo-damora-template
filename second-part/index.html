@@ -1,0 +1,651 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>DAMORA</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-primary navbar-fixed-top">
+        <!-- LG MD -->
+        <div class="container-fluid container-default-without-top-bottom visible-lg visible-md hidden-sm hidden-xs">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="pull-left hidden-xs hidden-sm" href="#" onclick="menu.open()">
+                    <ul class="navbar-nav">
+                        <li class="m-r-20">
+                            <img src="assets/images/icon-menu.png">
+                        </li>
+                        <li>MAIN NAVIGATION</li>
+                    </ul>
+                </a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/brand-logo.png" alt="brand-logo">
+                </a>
+                <div class="pull-right">
+                    <ul class="navbar-nav">
+                        <li class="m-r-10">
+                            <a href="#">MY ACCOUNT</a>
+                        </li>
+                        <li class="m-r-10 dashed"></li>
+                        <li class="dropdown m-r-20">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                IDR
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <a href="#">USD</a>
+                                </li>
+                                <li>
+                                    <a href="#">GBP</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="m-r-20">
+                            <img class="hover-pointer" src="assets/images/icon-search.png">
+                        </li>
+                        <li class="m-r-10">
+                            <img class="hover-pointer" src="assets/images/icon-bag.png">
+                        </li>
+                        <li class="">
+                            <b>0</b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+        <!-- / LG MD -->
+
+        <!-- SM XS -->
+        <div class="container hidden-lg hidden-md visible-sm visible-xs">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="pull-left" href="#" onclick="menu.open()">
+                    <ul class="navbar-nav">
+                        <li>
+                            <img class="icon icon-menu" src="assets/images/icon-menu.png">
+                        </li>
+                    </ul>
+                </a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/brand-logo.png" alt="brand-logo">
+                </a>
+                <div class="pull-right">
+                    <ul class="navbar-nav">
+                        <li class="m-r-10">
+                            <img class="icon hover-pointer" src="assets/images/icon-search.png">
+                        </li>
+                        <li class="m-r-5">
+                            <img class="icon icon-bag hover-pointer" src="assets/images/icon-bag.png">
+                        </li>
+                        <li class="">
+                            <b>0</b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- / SM XS -->
+    </nav>
+
+    <!-- Overlay Menu -->
+    <div class="nav-menu-overlay">
+        <div class="container-fluid container-default container-featured-products">
+            <a href="#" onclick="menu.close()">
+                <img class="close-menu pull-right" src="assets/images/icon-close.png" alt="...">
+            </a>
+            <div class="row">
+                <ul class="list-menu list-unstyled">
+                    <li>
+                        <h4>
+                            <a href="#">Home</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="#">Shop</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="#">Sale</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="#">Categories</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h6>
+                            <a href="#">Blog</a>
+                        </h6>
+                    </li>
+                    <li>
+                        <h6>
+                            <a href="#">About</a>
+                        </h6>
+                    </li>
+                    <li>
+                        <h6>
+                            <a href="#">Contact</a>
+                        </h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- End of Navigation -->
+
+
+    <!-- Slider -->
+
+    <!-- LG MD -->
+    <div class="container-fluid container-default container-slider visible-lg visible-md hidden-sm hidden-xs">
+        <div class="row">
+            <div class="col-lg-7">
+                <img class="img-responsive slider-main" src="assets/images/slider-image-0.png" alt="...">
+                <div class="slider-main-indicator">
+                    <span class="indicator-current">1</span>/
+                    <span class="indicator-total">4</span>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="slider-queue" src="assets/images/slider-image-1.png">
+                    <img class="img-responsive" src="assets/images/slider-image-1.png" alt="...">
+                    <div class="slider-queue-indicator">
+                        <ul class="list-unstyled list-inline">
+                            <li>
+                                <a href="#" class="indicator-prev">PREV</a>
+                            </li>
+                            <li>
+                                <div class="dashed"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="indicator-next">NEXT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / LG MD -->
+
+    <!-- SM XS -->
+    <div class="container container-slider hidden-lg hidden-md visible-sm visible-xs">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active full-screen" style="height: 667px; background-image: url(&quot;assets/images/slider-image-0.png&quot;);">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- / SM XS -->
+
+    <!-- / Slider -->
+
+    <!-- Featured Products -->
+
+    <!-- LG MD -->
+    <div class="container-fluid container-default container-featured-products visible-lg visible-md hidden-sm hidden-xs">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2 class="color-grey m-t-0">FEATURED PRODUCTS</h2>
+            </div>
+            <div class="col-lg-8">
+                <div class="row featured-products-thumbnail-list">
+                    <div class="col-lg-6">
+                        <a href="#" class="product-link">
+                            <div class="product-image">
+                                <div class="overlay">
+                                    <span>VIEW DETAILS</span>
+                                </div>
+                                <img class="img-responsive" src="assets/images/products-thumbnail-0.png" alt="...">
+                            </div>
+                            <div class="product-description">
+                                <h5 class="title m-t-0 m-b-0">NELKE STRIPE TOP</h5>
+                                <div class="price">IDR 299.000</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="#" class="product-link">
+                            <div class="product-image">
+                                <div class="overlay">
+                                    <span>VIEW DETAILS</span>
+                                </div>
+                                <img class="img-responsive" src="assets/images/products-thumbnail-1.png" alt="...">
+                            </div>
+                            <div class="product-description">
+                                <h5 class="title m-t-0 m-b-0">NELKE STRIPE TOP</h5>
+                                <div class="price">IDR 299.000</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="#" class="product-link">
+                            <div class="product-image">
+                                <div class="overlay">
+                                    <span>VIEW DETAILS</span>
+                                </div>
+                                <img class="img-responsive" src="assets/images/products-thumbnail-2.png" alt="...">
+                            </div>
+                            <div class="product-description">
+                                <h5 class="title m-t-0 m-b-0">NELKE STRIPE TOP</h5>
+                                <div class="price">IDR 299.000</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="#" class="product-link">
+                            <div class="product-image">
+                                <div class="overlay">
+                                    <span>VIEW DETAILS</span>
+                                </div>
+                                <img class="img-responsive" src="assets/images/products-thumbnail-3.png" alt="...">
+                            </div>
+                            <div class="product-description">
+                                <h5 class="title m-t-0 m-b-0">NELKE STRIPE TOP</h5>
+                                <div class="price">IDR 299.000</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="#" class="product-link">
+                            <div class="product-image">
+                                <div class="overlay">
+                                    <span>VIEW DETAILS</span>
+                                </div>
+                                <img class="img-responsive" src="assets/images/products-thumbnail-4.png" alt="...">
+                            </div>
+                            <div class="product-description">
+                                <h5 class="title m-t-0 m-b-0">NELKE STRIPE TOP</h5>
+                                <div class="price">IDR 299.000</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="#" class="product-link">
+                            <div class="product-image">
+                                <div class="overlay">
+                                    <span>VIEW DETAILS</span>
+                                </div>
+                                <img class="img-responsive" src="assets/images/products-thumbnail-5.png" alt="...">
+                            </div>
+                            <div class="product-description">
+                                <h5 class="title m-t-0 m-b-0">NELKE STRIPE TOP</h5>
+                                <div class="price">IDR 299.000</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="products-overview">
+                    <p>
+                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica,
+                        quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima
+                        et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+                        dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+                        luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis
+                        eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / LG MD -->
+
+    <!-- SM XS -->
+    <div class="container container-featured-products hidden-lg hidden-md visible-sm visible-xs">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4 class="color-grey m-t-15">FEATURED PRODUCTS</h4>
+            </div>
+            <div class="col-lg-8">
+                <div class="row featured-products-thumbnail-list">
+                    <div class="col-lg-6">
+                        <a href="#" class="product-link">
+                            <div class="product-image">
+                                <div class="overlay">
+                                    <span>VIEW DETAILS</span>
+                                </div>
+                                <img class="img-responsive" src="assets/images/products-thumbnail-0.png" alt="...">
+                            </div>
+                            <div class="product-description">
+                                <h5 class="title m-t-0 m-b-0">NELKE STRIPE TOP</h5>
+                                <div class="price">IDR 299.000</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="#" class="product-link">
+                            <div class="product-image">
+                                <div class="overlay">
+                                    <span>VIEW DETAILS</span>
+                                </div>
+                                <img class="img-responsive" src="assets/images/products-thumbnail-1.png" alt="...">
+                            </div>
+                            <div class="product-description">
+                                <h5 class="title m-t-0 m-b-0">NELKE STRIPE TOP</h5>
+                                <div class="price">IDR 299.000</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="#" class="product-link">
+                            <div class="product-image">
+                                <div class="overlay">
+                                    <span>VIEW DETAILS</span>
+                                </div>
+                                <img class="img-responsive" src="assets/images/products-thumbnail-2.png" alt="...">
+                            </div>
+                            <div class="product-description">
+                                <h5 class="title m-t-0 m-b-0">NELKE STRIPE TOP</h5>
+                                <div class="price">IDR 299.000</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="#" class="product-link">
+                            <div class="product-image">
+                                <div class="overlay">
+                                    <span>VIEW DETAILS</span>
+                                </div>
+                                <img class="img-responsive" src="assets/images/products-thumbnail-3.png" alt="...">
+                            </div>
+                            <div class="product-description">
+                                <h5 class="title m-t-0 m-b-0">NELKE STRIPE TOP</h5>
+                                <div class="price">IDR 299.000</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="#" class="product-link">
+                            <div class="product-image">
+                                <div class="overlay">
+                                    <span>VIEW DETAILS</span>
+                                </div>
+                                <img class="img-responsive" src="assets/images/products-thumbnail-4.png" alt="...">
+                            </div>
+                            <div class="product-description">
+                                <h5 class="title m-t-0 m-b-0">NELKE STRIPE TOP</h5>
+                                <div class="price">IDR 299.000</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="#" class="product-link">
+                            <div class="product-image">
+                                <div class="overlay">
+                                    <span>VIEW DETAILS</span>
+                                </div>
+                                <img class="img-responsive" src="assets/images/products-thumbnail-5.png" alt="...">
+                            </div>
+                            <div class="product-description">
+                                <h5 class="title m-t-0 m-b-0">NELKE STRIPE TOP</h5>
+                                <div class="price">IDR 299.000</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="products-overview">
+                    <p>
+                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica,
+                        quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima
+                        et quinta decima.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / SM XS -->
+
+    <!-- End of Featured Products -->
+
+    <!-- Social -->
+
+    <!-- LG MD -->
+    <div class="container-fluid container-default container-follow-our-instagram visible-lg visible-md hidden-sm hidden-xs">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2 class="color-grey m-t-0">FOLLOW OUR INSTAGRAM</h2>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a href="#">
+                            <img class="img-responsive" src="assets/images/instagram-thumbnail-0.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row social-thumbnail-list">
+                            <div class="col-lg-6">
+                                <a href="#">
+                                    <img class="img-responsive" src="assets/images/instagram-thumbnail-1.png" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="#">
+                                    <img class="img-responsive" src="assets/images/instagram-thumbnail-2.png" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="#">
+                                    <img class="img-responsive" src="assets/images/instagram-thumbnail-3.png" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="#">
+                                    <img class="img-responsive" src="assets/images/instagram-thumbnail-4.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / LG MD -->
+
+    <!-- SM XS -->
+    <div class="container container-follow-our-instagram hidden-lg hidden-md visible-sm visible-xs">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4 class="color-grey m-t-15">FOLLOW OUR INSTAGRAM</h4>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-6 m-b-20">
+                        <a href="#">
+                            <img class="img-responsive" src="assets/images/instagram-thumbnail-0.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="social-thumbnail-list">
+                            <div class="col-lg-6 col-sm-6 col-xs-6">
+                                <a href="#">
+                                    <img class="img-responsive" src="assets/images/instagram-thumbnail-1.png" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-xs-6">
+                                <a href="#">
+                                    <img class="img-responsive" src="assets/images/instagram-thumbnail-2.png" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-xs-6">
+                                <a href="#">
+                                    <img class="img-responsive" src="assets/images/instagram-thumbnail-3.png" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-xs-6">
+                                <a href="#">
+                                    <img class="img-responsive" src="assets/images/instagram-thumbnail-4.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / SM XS -->
+
+    <!-- End of Social -->
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer-top">
+            <div class="subscribe">
+                <form class="form input-group input-group-lg">
+                    <input type="text" class="form-control" placeholder="Enter Your Email Address">
+                    <span class="input-group-btn">
+                        <button class="btn btn-subscribe btn-no-background">SUBSCRIBE</button>
+                    </span>
+                </form>
+                <small class="text-uppercase">subscribe to our newsletter and get idr 50.000 off your first purchase</small>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#">Youtube</a>
+                    </li>
+                    <li>
+                        <a href="#">RSS Feed</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">2017 © DAMORA - FASHION ONLINE STORE POWERED BY SIRCLO</div>
+        </div>
+    </footer>
+
+    <!-- End of Footer -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+
+        let menu = {};
+        let slider = {
+            data: ['assets/images/slider-image-0.png', 'assets/images/slider-image-1.png', 'assets/images/slider-image-2.png', 'assets/images/slider-image-3.png'],
+            main: "",
+            queue: "",
+            current: {
+                index: 0,
+                label: 1
+            },
+            next: {
+                index: 1,
+                label: 2
+            },
+        };
+
+        function renderSlider(slider) {
+
+            slider.main = slider.data[slider.current.index];
+            slider.queue = slider.data[slider.next.index];
+
+            $('.slider-main').attr('src', slider.main);
+            $('.slider-queue').attr('src', slider.queue);
+
+            $('.indicator-current').text(slider.current.label);
+            $('.indicator-total').text(slider.data.length);
+
+        }
+
+        $('document').ready(function () {
+
+            menu = {
+                open: function () {
+                    $('.nav-menu-overlay').addClass('active');
+                },
+                close: function () {
+                    $('.nav-menu-overlay').removeClass('active');
+                }
+            };
+
+            $('.indicator-next').on('click', function () {
+
+                slider.current.index = slider.next.index;
+                slider.current.label = slider.next.label;
+
+                slider.next.index += 1;
+                slider.next.label += 1;
+
+                if (slider.current.index == slider.data.length) {
+                    slider.current = {
+                        index: 0,
+                        label: 1
+                    };
+                    slider.next = {
+                        index: 1,
+                        label: 2
+                    };
+                }
+
+                renderSlider(slider);
+
+            });
+
+            $('.indicator-prev').on('click', function () {
+                renderSlider(slider);
+            });
+
+            renderSlider(slider);
+
+            $('.carousel').carousel({
+                interval: 2000
+            })
+
+        });
+
+    </script>
+
+</body>
+
+</html>

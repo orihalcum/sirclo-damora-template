@@ -1,0 +1,66 @@
+	// Google Fonts
+	@import url("https://fonts.googleapis.com/css?family=Roboto|Teko");
+	/* CORE */
+
+	$header-font: "Teko",
+	san-serif;
+	$body-font: "Roboto",
+	san-serif;
+	$body-font-size: 17px;
+	/* SIZING */
+
+	$margin-lg: 20px;
+	$margin-md: 15px;
+	$margin-sm: 10px;
+	$margin-xs: 5px;
+	$padding-lg: 20px;
+	$padding-md: 15px;
+	$padding-sm: 10px;
+	$padding-xs: 5px;
+	/* BACKGROUND AND COLOR VARIABLE  */
+
+	$bg-light: #EFEFEF;
+	$color-primary: #169776;
+	$color-secondary: #13876a;
+	$color-yellow: #d8d6a8; // $color-primary: #3276b2;
+	$color-success: #189d0e;
+	$color-info: #3283ca;
+	$color-warning: #fab830;
+	$color-danger: #ca0813;
+	$color-light: #eee;
+	$color-dark: #333;
+	$color-grey: #999;
+	$color-dark-grey: #777;
+	$color-white: #FFF;
+	/* END OF COLOR VAR */
+
+	/* SIDEBAR */
+
+	$most-popular-rank-height: 30px;
+	$news-topic-height: 30px;
+	$most-popular-rank-width: 15px;
+	/* END OF SIDEBAR */
+
+	/* IMAGES */
+
+	$contributor-photo-xs: 40px;
+	$contributor-photo-sm: 55px;
+	/* FOOTER VAR */
+
+	$footer-height: auto;
+	$footer-padding: 15px 0px;
+	/* RESPONSIVE */
+
+	// XS
+	$xs-h1: 24px;
+	$xs-h2: 20px;
+	$xs-h3: 18px;
+	$xs-h4: 16px;
+	$xs-h5: 14px;
+	$xs-h6: 14px; // SM
+	$sm-h1: 24px;
+	$sm-h2: 20px;
+	$sm-h3: 18px;
+	$sm-h4: 16px;
+	$sm-h5: 14px;
+	$sm-h6: 14px;
