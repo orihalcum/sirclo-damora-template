@@ -1,5 +1,25 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+    .nav-menu-overlay {
+        .container-default {
+            margin: 0px;
+            margin-top: 30px;
+            padding: 25px;
+            .list-menu {
+                text-align: center;
+            }
+        }
+    }
+    .carousel-inner {
+        max-height: 300px;
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+    .container-featured-products {
+        margin-top: 25px;
+    }
     .products-overview {
         margin-bottom: 25px;
         p {
@@ -27,6 +47,6 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     .container-default {
-        padding: 50px !important;
+        padding: 50px;
     }
 }

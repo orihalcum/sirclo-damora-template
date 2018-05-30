@@ -8,7 +8,24 @@
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-    
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        top: 0px;
+        img {
+            position: relative;
+            left: -50%;
+            height: 20px;
+        }
+    }
+    .icon {
+        height: 15px;
+        width: auto;
+        margin-top: 8px;
+    }
+    .icon-menu {
+        margin-left: 30px;
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -22,7 +39,6 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-    
     .navbar {
         height: auto;
         min-height: 50px;
@@ -41,17 +57,22 @@
                 img {
                     position: relative;
                     left: -50%;
-                    top:-18px;
+                    top: -18px;
                     height: 25px;
                     width: auto;
                 }
             }
         }
-
-        
     }
     .navbar-nav {
         color: $color-dark;
-        a { color: $color-dark }
+        a {
+            color: $color-dark
+        }
+        .dashed {
+            border-bottom: 1px solid $color-dark;
+            width: 40px;
+            margin-top: 10px;
+        }
     }
 }

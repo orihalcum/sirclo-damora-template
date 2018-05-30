@@ -1,5 +1,4 @@
 // NAVBAR
-
 // OVERLAY
 .nav-menu-overlay {
     height: 100%;
@@ -45,6 +44,46 @@
 }
 
 // SLIDER
+.container-slider {
+    background-image: url('../assets/images/bg-slider.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.container-slider.visible-lg {
+    padding-top: 70px !important;
+}
+
+.container-slider.visible-sm {
+    padding-top: 50px !important;
+}
+
+.slider-main-indicator {
+    position: absolute;
+    bottom: 25px;
+    right: 45px;
+    color: white;
+    font-size: 20pt;
+}
+
+.slider-queue-indicator {
+    position: absolute;
+    bottom: -80px;
+    right: 45px;
+    color: $color-grey;
+    font-size: 20pt;
+    font-family: $header-font;
+    .dashed {
+        border-bottom: 2px solid $color-grey;
+        width: 30px;
+        margin-top: -10px;
+    }
+    a {
+        color: $color-grey
+    }
+}
+
 // PRODUCTS
 .container-featured-products {
     .featured-products-thumbnail-list {
