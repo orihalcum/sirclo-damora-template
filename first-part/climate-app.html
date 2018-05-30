@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Climate App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+    <div>
+        <select class="city">
+            <option value="Jakarta">Jakarta</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="London">London</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <table border=1></table>
+    </div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script>
+        
+        function dateUniform(d){
+
+            if(d < 10)
+                return "0" + d;
+            else    
+                return d;
+
+        }
+
+        function getData(city){
+
+            let url = " http://api.openweathermap.org/data/2.5/forecast/daily?q=" + city + "&mode=json&units=metric&cnt=5&APPID=481e3bc28e5264e5607c2b65b449bfc1";
+            $.get(url, function (result) {
+                render(result);
+            });
+
+        }
+    	
+        function render(result){
+
+            let html = "", tableHead = "", tableBody = "", tableFooter = "";
+            let sum = {
+                n : result.list.length,
+                temperature : 0,
+                variance : 0
+            };
+
+            tableHead = 
+                `<tr>
+                    <th>${result.city.name}</th>
+                    <th>Temperature</th>
+                    <th>Variance</th>
+                </tr>`;
+            
+            result.list.forEach(element => {
+                
+                let d = new Date();
+                d.setUTCSeconds(element.dt);
+                let date = d.getFullYear() + "-" + dateUniform(d.getMonth() + 1) + "-" + dateUniform(d.getDate());
+                let temperature = element.temp.day;
+                let variance = element.temp.max - element.temp.min;
+                let tr = `
+                    <tr>
+                        <td>${date}</td>
+                        <td>${temperature.toFixed(0)}C</td>
+                        <td>${variance.toFixed(2)}C</td>
+                    </tr>
+                    `;
+                sum.temperature += temperature;
+                sum.variance += variance;
+                
+                tableBody += tr;
+
+            });
+            
+            tableFooter = `
+                <tr>
+                    <td>Average</td>
+                    <td>${(sum.temperature / sum.n).toFixed(0)}C</td>
+                    <td>${(sum.variance / sum.n).toFixed(2)}C</td>
+                </tr>
+            `;
+
+            html = tableHead + tableBody + tableFooter;
+
+            $('table').html(html);
+
+        };
+
+        $(document).ready(function(){
+
+            let city = $('.city').val();
+            
+            $('.city').on('change', function(){
+                getData($(this).val());
+            });
+
+            getData(city);
+
+        });
+
+    </script>
+
+</body>
+</html>
