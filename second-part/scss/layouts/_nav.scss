@@ -3,212 +3,55 @@
 }
 
 .navbar.navbar-trasparent {
-    background-color: rgba(19,135,106,0.8) !important;
+    background-color: rgba(19, 135, 106, 0.8) !important;
 }
 
-
-.navbar-toggle {
-    // background-color: white; // border : 2px solid $color-primary;
-    border-radius: 0;
-    color: $color-primary;
-    float: left !important;
-    margin-right: 0px;
-    margin-left: 5px;
-    .icon-bar {
-        background-color: $color-white;
-    }
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    
 }
 
-.nav.navbar-nav {
-    li.active {
-        a {
-            color: $color-yellow;
-        }
-    }
-}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {}
 
-.navbar-toggle-search {
-    float: right;
-    margin-right: 15px;
-    margin-top: 12.5px;
-    color: $color-primary;
-    border: none;
-    background-color: white;
-    outline: none;
-}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {}
 
-@media only screen and (min-width: 1240px) {
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    
     .navbar {
         height: auto;
         min-height: 50px;
         margin-bottom: 20px;
+        font-size: 10pt;
         .navbar-header {
+            width: 100%;
+            padding: 25px 35px;
             .navbar-brand {
                 text-align: center;
                 height: 80px;
-                padding: 15px 15px;
-                font-size: 18px;
+                font-size: 12pt;
                 line-height: 20px;
-                img {
-                    height: 45px;
-                    width: auto;
-                    margin-top: 2.5px;
-                }
-            }
-        }
-        .collapse {
-            ul.nav {
-                li {
-                    a {
-                        &:hover {
-                            color: $color-yellow;
-                        }
-                        color: $color-white;
-                        background-color: transparent;
-                        font-weight: bold;
-                        cursor: pointer;
-                        padding: 0px;
-                        padding-bottom: 5px;
-                        margin: 15px 15px 0px 15px; // &:hover {
-                        //     background-color: white !important;
-                        // }
-                        // &:focus {
-                        //     background-color: white !important;
-                        //     outline: none;
-                        // }
-                        h4 {
-                            margin-bottom: 0
-                        }
-                    }
-                }
-                li.active {
-                    a {
-                        color: $color-yellow;
-                    }
-                }
-            }
-            .nav.navbar-nav {
-                margin-top: 15px;
-            }
-            .navbar-form {
-                .form-group {
-                    .form-control {
-                        width: 150px;
-                        border: none;
-                        border-bottom: 1px solid $color-dark-grey;
-                        border-radius: 0;
-                        box-shadow: none;
-                        -webkit-box-shadow: none;
-                        -moz-box-shadow: none;
-                        padding: 10px;
-                        transition: width 0.8s;
-                        margin-right: -20px;
-                    }
-                    i.fa-search {
-                        position: relative;
-                        right: 15px;
-                        color: $color-primary;
-                    }
-                }
-                .list-inline {
-                    li {
-                        padding: 0;
-                    }
-                }
-                margin-top: 23px;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 720px) {
-    #bs-example-navbar-collapse-0>div {
-        padding: 0 15px;
-    }
-    #bs-example-navbar-collapse-1 {
-        border-top: none;
-    }
-    .navbar {
-        height: 50px;
-        margin-bottom: 20px;
-        width: 100%;
-        .navbar-header {
-            .navbar-brand {
-                z-index: -99;
                 position: absolute;
-                left: 0%;
-                width: 100%;
+                left: 50%;
                 img {
+                    position: relative;
+                    left: -50%;
+                    top:-18px;
                     height: 25px;
-                    width: auto; // position: relative;
-                    margin: 0 auto;
+                    width: auto;
                 }
-            }
-            .navbar-toggle-search {
-                float: right;
-                margin-right: 15px;
-                margin-top: 12.5px;
-                color: $color-white;
-                background-color: transparent;
             }
         }
-        .collapse,
-        .collapsing {
-            ul.nav {
-                li {
-                    a {
-                        color: $color-white;
-                        font-weight: bold;
-                        cursor: pointer;
-                        padding: 0px;
-                        padding-bottom: 5px;
-                        margin: 15px; // &:hover {
-                        //     background-color: white !important;
-                        // }
-                        // &:focus {
-                        //     background-color: white !important;
-                        //     outline: none;
-                        // }
-                        h4 {
-                            margin-bottom: 0
-                        }
-                        &:focus {
-                            background-color: transparent;
-                        }
-                    }
-                }
-            }
-            .nav.navbar-nav {
-                background-color: $color-secondary;
-                margin-bottom: 0;
-            }
-            .navbar-form {
-                margin-top: 0px;
-                margin-bottom: 0px;
-                padding: 15px 30px;
-                .form-group {
-                    .form-control {
-                        width: 100%;
-                        border: none;
-                        border-bottom: 1px solid $color-dark-grey;
-                        border-radius: 0;
-                        box-shadow: none;
-                        -webkit-box-shadow: none;
-                        -moz-box-shadow: none;
-                        padding: 10px; // margin-right : -20px;
-                    }
-                    i.fa-search {
-                        position: relative;
-                        right: 15px;
-                        color: $color-primary;
-                    }
-                }
-                .list-inline {
-                    li {
-                        padding: 0;
-                    }
-                }
-            }
-        } // .collapsing > div { margin : 0 -15px; }
+
+        
+    }
+    .navbar-nav {
+        color: $color-dark;
+        a { color: $color-dark }
     }
 }

@@ -1,0 +1,113 @@
+footer {
+    height: auto;
+    background-image: url('../assets/images/pattern-box.png');
+    background-repeat: repeat-y;
+    background-position: center top;
+    padding-top: 25px;
+    .footer-top {
+        .subscribe {
+            width: 570px;
+            height: auto;
+            padding: 25px 25px 35px 25px;
+            margin: 30px auto;
+            background-color: $color-grey;
+            color: white;
+            box-shadow: 10px 20px 80px #AAA;
+            input.form-control {
+                background-color: transparent;
+                border: 0;
+                border-bottom: 1px solid white;
+                border-radius: 0;
+                box-shadow: none;
+                padding: 0;
+                font-size: 14pt;
+                color: white;
+                &:focus {
+                    outline: none;
+                }
+            }
+            input.form-control::-webkit-input-placeholder {
+                color: white;
+            }
+            .btn-subscribe {
+                background-color: transparent;
+                font-size: 25pt;
+                font-family: $header-font;
+                padding: 0 0 0 15px;
+                margin-bottom: -30px;
+                &:hover {
+                    color: white;
+                }
+            }
+            small {
+                font-size: 7pt;
+                font-style: italic;
+            }
+        }
+        .social-media {
+            padding: 50px 0;
+            text-align: center;
+            li {
+                display: inline;
+                padding: 0 15px;
+                font-size: 13pt;
+                a {
+                    color: $color-dark-grey
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        .copyright {
+            font-family: $header-font;
+            font-size: 30pt;
+            text-align: center;
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .subscribe {
+        width: 100% !important;
+    }
+    .btn-subscribe {
+        font-size: 20pt !important;
+        font-family: $header-font;
+        padding: 0 0 0 15px;
+        margin-bottom: -30px;
+        &:hover {
+            color: white;
+        }
+    }
+    .social-media {
+        padding: 25px 0 !important;
+        li {
+            display: inline;
+            padding: 0 5px !important;
+            font-size: 13pt;
+        }
+    }
+    .footer-bottom {
+        .copyright {
+            font-size: 14pt !important;
+        }
+    }
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .container-default {
+        padding: 50px !important;
+    }
+}

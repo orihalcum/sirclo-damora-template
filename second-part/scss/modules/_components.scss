@@ -1,48 +1,117 @@
-// IMAGE
-.headline-image,
-.article-cover {
-    // ratio 3 : 2
-    width: 100%;
-    height: 100%;
-    max-height: 487px !important;
-    overflow: hidden;
-}
+// NAVBAR
 
-.article-cover {
-    margin-bottom: 50px;
-    img {
-        height: 100%;
-        max-height: 487px !important;
+// OVERLAY
+.nav-menu-overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../assets/images/damora-shadow.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    z-index: 99999;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    .close-menu {
+        height: 20pt;
+        width: auto;
+        text-align: right;
+        display: none;
+    }
+    .list-menu {
+        margin-top: 30px;
+        display: none;
+        margin-left: 100px;
+        h3 {
+            margin: 0
+        }
+    }
+    a {
+        color: white
     }
 }
 
-// LIST
-// ol li, ul li
-.main-news-list ol {
-    padding-left: 20px;
+.nav-menu-overlay.active {
+    width: 100%;
+    .list-menu,
+    .close-menu {
+        display: block;
+    }
 }
 
-.main-news-list ol li {
-    margin-left: 10px;
-    padding-left: 10px;
+// SLIDER
+// PRODUCTS
+.container-featured-products {
+    .featured-products-thumbnail-list {
+        .product-link {
+            &:hover {
+                .product-image {
+                    .overlay {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+        .product-image {
+            position: relative;
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #333;
+                &::after {
+                    content: "VIEW DETAILS";
+                    font-size: 24pt;
+                    color: white;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    text-align: center;
+                    font-family: $header-font;
+                }
+            }
+        }
+        .product-description {
+            text-align: center;
+            padding: 30px 0 40px;
+            .title {
+                color: $color-grey;
+            }
+            .price {
+                color: $color-light-grey;
+                font-weight: 100;
+                margin-top: 10px;
+            }
+        }
+    }
+    .products-overview {
+        p {
+            line-height: 200%;
+            color: $color-grey;
+            font-size: 12pt;
+        }
+    }
+} // SOCIAL 
+.social-thumbnail-list {
+    img {
+        margin-bottom: 30px
+    }
 }
-
-.main-news-list ol li ol,
-.main-news-list ol li p {
-    margin: 5px 0 10px;
-}
-
-.main-news-list ol li ol li {
-    padding-left: 5px;
-}
-
-.main-news-list ol li ol li,
-.main-news-list ol li ol li p {
-    margin: 5px 0 10px;
-}
-
-.parent-title-list {
-    margin-top: 25px;
-}
-
-.thumbnail { height: 320px; margin-bottom: 0px; border-radius: 0  }
